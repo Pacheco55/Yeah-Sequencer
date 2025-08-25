@@ -32,29 +32,45 @@ Modo manual para composición nota por nota con control individual de duración,
 
 ---
 
-## **Especificaciones del Software**
+<details>
+  <summary><strong>🧰 Requisitos del Sistema</strong></summary>
 
-### **Requisitos del Sistema**
+  <br>
 
-**Sistema Operativo**
-Windows 10 (64-bit) o superior, Windows 11 compatible
+  ### **Sistema Operativo**
+  Windows 10 (64-bit) o superior, Windows 11 compatible
 
-**Hardware Mínimo**
-Procesador: Intel Core i3 o AMD equivalente, RAM: 4GB mínimo (8GB recomendado), almacenamiento: 50MB de espacio libre, tarjeta de sonido: cualquier dispositivo de audio compatible con Windows
+  ### **Hardware Mínimo**
+  - Procesador: Intel Core i3 o AMD equivalente  
+  - RAM: 4GB mínimo (8GB recomendado)  
+  - Almacenamiento: 50MB de espacio libre  
+  - Tarjeta de sonido: cualquier dispositivo de audio compatible con Windows
 
-**Hardware Recomendado**
-Procesador: Intel Core i5 o superior, RAM: 8GB o más, almacenamiento: SSD para mejor rendimiento, interfaz de audio: dedicada para latencia mínima
+  ### **Hardware Recomendado**
+  - Procesador: Intel Core i5 o superior  
+  - RAM: 8GB o más  
+  - Almacenamiento: SSD para mejor rendimiento  
+  - Interfaz de audio: dedicada para latencia mínima
 
-### **Archivo Ejecutable**
+</details>
 
-**Distribución**
-Archivo ejecutable independiente (.exe), no requiere instalación de Python, todas las dependencias incluidas, archivo comprimido ZIP para descarga
+<details>
+  <summary><strong>📦 Archivo Ejecutable</strong></summary>
 
-**Tamaño del Archivo**
-Aproximadamente 15-20MB comprimido, 45-60MB descomprimido
+  <br>
 
-**Instalación**
-Descarga el archivo ZIP, extrae en cualquier carpeta, ejecuta PIXELBITS_YEAH_SEQUENCER.exe, no requiere permisos de administrador
+  ### **Distribución**
+  Archivo ejecutable independiente (.exe), no requiere instalación de Python, todas las dependencias incluidas, archivo comprimido ZIP para descarga
+
+  ### **Tamaño del Archivo**
+  - Comprimido: aproximadamente 15–20MB  
+  - Descomprimido: aproximadamente 45–60MB
+
+  ### **Instalación**
+  Descarga el archivo ZIP, extrae en cualquier carpeta, ejecuta `PIXELBITS_YEAH_SEQUENCER.exe`, no requiere permisos de administrador
+
+</details>
+
 
 ---
 
@@ -93,14 +109,34 @@ Descarga el archivo ZIP, extrae en cualquier carpeta, ejecuta PIXELBITS_YEAH_SEQ
 
 ### **Primera Ejecución**
 
-**Paso 1: Descarga e Instalación**
-Descarga el archivo ZIP desde la sección de releases, extrae el contenido en una carpeta de tu elección, asegúrate de tener permisos de lectura/escritura en la carpeta y ejecuta el archivo PIXELBITS_YEAH_SEQUENCER.exe.
+<details>
+  <summary><strong>📥 Paso 1: Descarga e Instalación</strong></summary>
 
-**Paso 2: Verificación de Audio**
-El software detectará automáticamente tu dispositivo de audio, verifica que el volumen del sistema esté activado, prueba la reproducción con los controles de volumen general y efectos.
+  <br>
 
-**Paso 3: Primera Secuencia**
-Selecciona un tono base (recomendado: C), elige una escala (recomendado: Mayor para empezar), configura 8 notas como punto de partida y presiona "Generar Secuencia" en modo Aleatorio.
+  Descarga el archivo ZIP desde la sección de releases, extrae el contenido en una carpeta de tu elección, asegúrate de tener permisos de lectura/escritura en la carpeta y ejecuta el archivo `PIXELBITS_YEAH_SEQUENCER.exe`.
+
+</details>
+
+<details>
+  <summary><strong>🔊 Paso 2: Verificación de Audio</strong></summary>
+
+  <br>
+
+  El software detectará automáticamente tu dispositivo de audio.  
+  Verifica que el volumen del sistema esté activado y prueba la reproducción con los controles de volumen general y efectos.
+
+</details>
+
+<details>
+  <summary><strong>🎼 Paso 3: Primera Secuencia</strong></summary>
+
+  <br>
+
+  Selecciona un tono base (**recomendado: C**), elige una escala (**recomendado: Mayor para empezar**), configura 8 notas como punto de partida y presiona **"Generar Secuencia"** en modo Aleatorio.
+
+</details>
+
 
 ### **Controles Básicos**
 
@@ -196,6 +232,136 @@ En modo manual, cada nota agregada genera automáticamente un slider de duració
 
 ---
 
+## **Características Técnicas Avanzadas**
+
+<details>
+  <summary><strong>🎧 Motor de Audio</strong></summary>
+
+  <br>
+
+  ### **Especificaciones Técnicas**
+  - Frecuencia de muestreo: 22,050 Hz  
+  - Resolución: 16-bit estéreo  
+  - Latencia mínima para respuesta en tiempo real  
+  - Procesamiento multithread para estabilidad
+
+  ### **Síntesis en Tiempo Real**
+  - Generación procedural de formas de onda  
+  - Cálculos trigonométricos de alta precisión  
+  - Envolvente ADSR automática para naturalidad sonora  
+  - Optimización de memoria para secuencias largas
+
+</details>
+
+<details>
+  <summary><strong>🎛️ Algoritmos de Efectos</strong></summary>
+
+  <br>
+
+  ### **Reverb Digital**
+  - Implementación de delay con retroalimentación  
+  - Control de saturación para calidez tonal  
+  - Procesamiento estéreo para espacialidad  
+  - Optimización CPU para uso en tiempo real
+
+  ### **Delay Estéreo**
+  - Hasta 8 repeticiones configurables  
+  - Temporización variable de 0.05 a 1.0 segundos  
+  - Procesamiento independiente por canal  
+  - Efecto ping-pong para amplitud estéreo
+
+  ### **Filtros Digitales**
+  - Implementación Butterworth de segundo orden  
+  - Respuesta en frecuencia lineal  
+  - Factor Q variable para resonancia controlada  
+  - Procesamiento de baja latencia
+
+</details>
+
+---
+
+## **Resolución de Problemas**
+
+![Python](https://img.shields.io/badge/Python-Scripting-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Tkinter](https://img.shields.io/badge/Tkinter-GUI-FFCA28?style=for-the-badge&logo=python&logoColor=black)
+![VSCode](https://img.shields.io/badge/VSCode-Editor-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+
+
+<details>
+  <summary><strong>🔊 Problemas de Audio</strong></summary>
+
+  <br>
+
+  ### **Sin sonido al reproducir**
+  Verifica que el volumen del sistema esté activado, confirma que no hay otras aplicaciones bloqueando el audio, reinicia el secuenciador si persiste el problema y verifica la conexión de auriculares o altavoces.
+
+  ### **Audio entrecortado o con ruido**
+  Cierra otras aplicaciones que consuman CPU intensivamente, verifica que el sistema cumpla los requisitos mínimos, ajusta la configuración de efectos (reduce reverb/delay si es necesario) y considera usar una interfaz de audio dedicada.
+
+  ### **Latencia alta en modo manual**
+  El software está optimizado para latencia mínima pero factores del sistema pueden afectar la respuesta. Cierra aplicaciones innecesarias y considera actualizar drivers de audio.
+
+</details>
+
+<details>
+  <summary><strong>🖥️ Problemas de Interfaz</strong></summary>
+
+  <br>
+
+  ### **Ventana no responde**
+  El software incluye procesamiento multithread pero secuencias muy largas (>32 notas) con múltiples efectos pueden causar retrasos temporales. Usa el botón "Detener" si la aplicación parece congelada.
+
+  ### **Controles no funcionan**
+  Reinicia la aplicación completamente, verifica que no hay diálogos de error ocultos y usa el botón "Reset" para restaurar configuración por defecto.
+
+</details>
+
+<details>
+  <summary><strong>⚙️ Problemas de Rendimiento</strong></summary>
+
+  <br>
+
+  ### **Uso alto de CPU**
+  Desactiva efectos no esenciales (especialmente reverb y delay), reduce el número de notas en secuencias largas, cierra otras aplicaciones de audio simultáneas y verifica que el sistema cumpla requisitos recomendados.
+
+  ### **Archivo ejecutable no inicia**
+  Verifica que tienes permisos de ejecución en la carpeta, confirma que no hay software antivirus bloqueando la ejecución, extrae nuevamente el archivo ZIP y ejecuta como administrador si es necesario.
+
+</details>
+
+
+---
+
+## **Consejos de Uso Profesional**
+
+### **Flujo de Trabajo Creativo**
+
+**Exploración Musical Sistemática**
+Comienza con escalas familiares (Mayor/Menor) antes de explorar modos exóticos, experimenta con una escala a la vez para comprender su carácter único, usa el modo aleatorio para inspiración inicial y refina manualmente las ideas generadas.
+
+**Experimentación Sonora**
+Combina diferentes tipos de síntesis con efectos específicos, usa FM con delay para texturas complejas, experimenta con filtros en tiempo real y guarda configuraciones exitosas para proyectos futuros.
+
+### **Técnicas de Composición**
+
+**Desarrollo Melódico**
+Usa secuencias cortas (4-8 notas) como células melódicas básicas, desarrolla variaciones cambiando octavas o escalas, crea contrastes usando diferentes timbres de síntesis y construye narrativas musicales con dinámicas de volumen.
+
+**Armonización Avanzada**
+Experimenta con modos griegos para colores armónicos únicos, usa escalas pentatónicas para simplicidad elegante, combina escalas de blues para tensión y resolución y explora escalas étnicas para inspiración multicultural.
+
+---
+
+## **Comunidad y Soporte**
+
+<div align="center">
+
+![GitHub last commit](https://img.shields.io/github/last-commit/Pacheco55/Yeah-Sequencer?color=orange)
+![GitHub issues](https://img.shields.io/github/issues/Pacheco55/Yeah-Sequencer?color=yellow)
+![GitHub stars](https://img.shields.io/github/stars/Pacheco55/Yeah-Sequencer?style=social)
+
+<br>
+
 ## **Aplicaciones Profesionales**
 
 ### **Producción Musical**
@@ -225,117 +391,35 @@ Herramienta para musicoterapeutas profesionales, apoyo en sesiones de rehabilita
 
 ---
 
-## **Características Técnicas Avanzadas**
+<details>
+  <summary><strong>📜 Términos de Uso</strong></summary>
 
-### **Motor de Audio**
+  <br>
 
-**Especificaciones Técnicas**
-Frecuencia de muestreo: 22,050 Hz, resolución: 16-bit estéreo, latencia mínima para respuesta en tiempo real, procesamiento multithread para estabilidad
+  ### **Licencia de Software**
 
-**Síntesis en Tiempo Real**
-Generación procedural de formas de onda, cálculos trigonométricos de alta precisión, envolvente ADSR automática para naturalidad sonora y optimización de memoria para secuencias largas.
+  PIXELBITS YEAH SEQUENCER se distribuye bajo licencia MIT, permitiendo uso personal y comercial libre, modificación y distribución de configuraciones y integración en proyectos musicales profesionales.
 
-### **Algoritmos de Efectos**
+  ### **Contenido Musical**
 
-**Reverb Digital**
-Implementación de delay con retroalimentación, control de saturación para calidez tonal, procesamiento estéreo para espacialidad y optimización CPU para uso en tiempo real.
+  Todas las secuencias creadas con el software son propiedad intelectual del usuario, no hay restricciones sobre el uso comercial de las composiciones, se permite la distribución de música creada con la herramienta y se recomienda acreditar la herramienta utilizada.
 
-**Delay Estéreo**
-Hasta 8 repeticiones configurables, temporización variable de 0.05 a 1.0 segundos, procesamiento independiente por canal y efecto ping-pong para amplitud estéreo.
+</details>
 
-**Filtros Digitales**
-Implementación Butterworth de segundo orden, respuesta en frecuencia lineal, factor Q variable para resonancia controlada y procesamiento de baja latencia.
+<details>
+  <summary><strong>🚚 Distribución del Software</strong></summary>
 
----
+  <br>
 
-## **Resolución de Problemas**
+  ### **Canales Oficiales**
 
-### **Problemas de Audio**
+  Descarga únicamente desde el repositorio oficial de GitHub, verificación de integridad mediante checksums proporcionados, actualizaciones automáticas desde fuentes verificadas y soporte técnico exclusivo para versiones oficiales.
 
-**Sin sonido al reproducir**
-Verifica que el volumen del sistema esté activado, confirma que no hay otras aplicaciones bloqueando el audio, reinicia el secuenciador si persiste el problema y verifica la conexión de auriculares o altavoces.
+  ### **Advertencias de Seguridad**
 
-**Audio entrecortado o con ruido**
-Cierra otras aplicaciones que consuman CPU intensivamente, verifica que el sistema cumpla los requisitos mínimos, ajusta la configuración de efectos (reduce reverb/delay si es necesario) y considera usar una interfaz de audio dedicada.
+  No descargues el software desde fuentes no oficiales, verifica la autenticidad del archivo ejecutable y reporta cualquier distribución no autorizada al equipo de desarrollo.
 
-**Latencia alta en modo manual**
-El software está optimizado para latencia mínima pero factores del sistema pueden afectar la respuesta. Cierra aplicaciones innecesarias y considera actualizar drivers de audio.
-
-### **Problemas de Interfaz**
-
-**Ventana no responde**
-El software incluye procesamiento multithread pero secuencias muy largas (>32 notas) con múltiples efectos pueden causar retrasos temporales. Usa el botón "Detener" si la aplicación parece congelada.
-
-**Controles no funcionan**
-Reinicia la aplicación completamente, verifica que no hay diálogos de error ocultos y usa el botón "Reset" para restaurar configuración por defecto.
-
-### **Problemas de Rendimiento**
-
-**Uso alto de CPU**
-Desactiva efectos no esenciales (especialmente reverb y delay), reduce el número de notas en secuencias largas, cierra otras aplicaciones de audio simultáneas y verifica que el sistema cumpla requisitos recomendados.
-
-**Archivo ejecutable no inicia**
-Verifica que tienes permisos de ejecución en la carpeta, confirma que no hay software antivirus bloqueando la ejecución, extrae nuevamente el archivo ZIP y ejecuta como administrador si es necesario.
-
----
-
-## **Consejos de Uso Profesional**
-
-### **Flujo de Trabajo Creativo**
-
-**Exploración Musical Sistemática**
-Comienza con escalas familiares (Mayor/Menor) antes de explorar modos exóticos, experimenta con una escala a la vez para comprender su carácter único, usa el modo aleatorio para inspiración inicial y refina manualmente las ideas generadas.
-
-**Experimentación Sonora**
-Combina diferentes tipos de síntesis con efectos específicos, usa FM con delay para texturas complejas, experimenta con filtros en tiempo real y guarda configuraciones exitosas para proyectos futuros.
-
-### **Técnicas de Composición**
-
-**Desarrollo Melódico**
-Usa secuencias cortas (4-8 notas) como células melódicas básicas, desarrolla variaciones cambiando octavas o escalas, crea contrastes usando diferentes timbres de síntesis y construye narrativas musicales con dinámicas de volumen.
-
-**Armonización Avanzada**
-Experimenta con modos griegos para colores armónicos únicos, usa escalas pentatónicas para simplicidad elegante, combina escalas de blues para tensión y resolución y explora escalas étnicas para inspiración multicultural.
-
----
-
-## **Comunidad y Soporte**
-
-### **Recursos de Aprendizaje**
-
-**Tutoriales Integrados**
-El software incluye ejemplos pre-configurados para cada escala musical, plantillas de efectos para diferentes géneros musicales, guías contextuales en la interfaz y tips de uso que aparecen durante la navegación.
-
-**Documentación Adicional**
-Manual de teoría musical aplicada disponible en el repositorio, ejemplos de configuraciones para géneros específicos, guías de resolución de problemas paso a paso y mejores prácticas para optimización de rendimiento.
-
-### **Comunidad de Usuarios**
-
-**Compartir Creaciones**
-Los usuarios pueden compartir configuraciones de escalas personalizadas, intercambiar secuencias musicales creadas, colaborar en proyectos musicales y documentar técnicas innovadoras.
-
-**Soporte Técnico**
-Reporta problemas técnicos en la sección Issues del repositorio, solicita nuevas funcionalidades mediante Feature Requests, participa en discusiones sobre mejoras y accede a soporte directo del equipo de desarrollo.
-
----
-
-## **Licencia y Distribución**
-
-### **Términos de Uso**
-
-**Licencia de Software**
-PIXELBITS YEAH SEQUENCER se distribuye bajo licencia MIT, permitiendo uso personal y comercial libre, modificación y distribución de configuraciones y integración en proyectos musicales profesionales.
-
-**Contenido Musical**
-Todas las secuencias creadas con el software son propiedad intelectual del usuario, no hay restricciones sobre el uso comercial de las composiciones, se permite la distribución de música creada con la herramienta y se recomienda acreditar la herramienta utilizada.
-
-### **Distribución del Software**
-
-**Canales Oficiales**
-Descarga únicamente desde el repositorio oficial de GitHub, verificación de integridad mediante checksums proporcionados, actualizaciones automáticas desde fuentes verificadas y soporte técnico exclusivo para versiones oficiales.
-
-**Advertencias de Seguridad**
-No descargues el software desde fuentes no oficiales, verifica la autenticidad del archivo ejecutable y reporta cualquier distribución no autorizada al equipo de desarrollo.
+</details>
 
 ---
 
@@ -344,41 +428,47 @@ No descargues el software desde fuentes no oficiales, verifica la autenticidad d
 ### **Desarrollo Principal**
 
 **PIXELBITS Studios**
-*Innovación en tecnología embebida*
-*Especialistas en IoT y sistemas de monitoreo*
+*Innovación en tecnología musical*
+*Especialistas en gadgets y software*
 
 ### **Lead Developer**
 
 **Pacheco 55**
-*Arquitecto de software y especialista en ESP32*
-*Experto en protocolos de comunicación inalámbrica*
+*Arquitecto de software y especialista en AudioVisuales*
+*Experto en exploracion Sonica*
+
+---
+## 🌐 Contacto
+
+<div align="center">
+
+**PIXELBITS Studios** - *Innovación en tecnología embebida*
+
+[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/channel/UCkLUjIeYTECtigFdcQjWu5Q)
+[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://x.com/pixelbitstud)
+[![Twitch](https://img.shields.io/badge/Twitch-9146FF?style=for-the-badge&logo=twitch&logoColor=white)](https://www.twitch.tv/pixelbits_studio/about)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:info@pixelbits.studio)
+
+</div>
 
 ---
 
-## **Licencia**
+## 📜 Licencia
 
-Este proyecto está licenciado bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para más detalles.
+Este proyecto está bajo la Licencia MIT. Ver [LICENSE](LICENSE) para detalles.
 
----
-
-## **¡Apóyanos!**
-
-Si este proyecto te ha sido útil:
-
-Dale una estrella al repositorio, compártelo con otros developers, déjanos tus comentarios y contribuye al proyecto.
+[![License](https://img.shields.io/badge/Licencia-MIT-green.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
 ---
 
 <div align="center">
 
-### **Hecho con amor por PIXELBITS Studios**
+### **Hecho con 👽 por PIXELBITS Studios**
 
-*Transformando ideas en código, un ESP32 a la vez.*
+**WiFi Monitor ESP32 - Porque conocer tu entorno es el primer paso hacia la seguridad.**
 
-**[Instagram](https://www.instagram.com/pixelbits_studios/) | [YouTube](https://www.youtube.com/channel/UCkLUjIeYTECtigFdcQjWu5Q) | [Twitter](https://x.com/pixelbitstud) | [Twitch](https://www.twitch.tv/pixelbits_studio/about)**
+[![Repository Views](https://komarev.com/ghpvc/?username=pixelbits-opera-num&color=00ff41&style=flat-square&label=Visitas+de+otros+Mundos)](https://github.com/Pacheco55/WiFi-Monitor-ESP32)
 
----
-
-*PIXELBITS YEAH SEQUENCER - Donde la tecnología encuentra la creatividad musical.*
 
 </div>
+
